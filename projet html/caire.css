@@ -1,0 +1,155 @@
+nav ul{
+    display: flex;
+    justify-content: flex-end;
+    flex: 1;
+    padding-right: 40px;
+    text-align: right;
+    list-style-type: none;
+
+}
+nav ul li {
+    margin-right: 10px;
+}
+nav ul li a {
+    position: relative;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+nav ul li a::after{
+    content: "";
+    background: bisque;
+    position:absolute;
+    bottom:-5px; 
+    right: 0;
+    width: 0;
+    height: 3px;
+    transform: translateX(-50%);
+    left: 50%;
+    transition: width 0,3s;
+
+}
+nav ul li a:hover::after{
+    width: 50%;
+}
+.container{
+    min-height: 90vh;
+    min-width:100%;
+    position:absolute;
+    background-image: linear-gradient(rgba(0,0,0,0.3),transparent),url(IMG_2140.JPG);
+    background-position: center;
+    background-size: cover;
+    padding: 0 8%;
+    top: 0%;
+    left: 0;
+    z-index:-100;
+}
+container1 span{
+    color: white;
+    text-transform: uppercase;
+    display: block;
+
+}
+.text1{
+    color: white;
+    font-size:  60px;
+    font-weight: 700;
+    letter-spacing: 8px;
+    margin-bottom: 30px;
+    animation: text 3s 1;
+    position: relative;
+}
+.text2{
+    font-size:  30px;
+    color:hsl(27, 70%, 65%);
+}
+@keyframes text{
+    0%{
+        color: black;
+        margin-bottom: -40px;
+    }
+
+30%{
+    letter-spacing: 25px;
+    margin-bottom: -40px;
+}
+85%{
+    letter-spacing: 8px;
+    margin-bottom: -40px;
+}
+}
+@keyframes text{
+    0%{
+        color: black;
+        margin-bottom: -40px;
+    }
+
+30%{
+    letter-spacing: 25px;
+    margin-bottom: -40px;
+}
+85%{
+    letter-spacing: 8px;
+    margin-bottom: -40px;
+}
+}
+div#athene
+{
+    height: 600px;
+    position: relative;
+}
+div#athene p
+{
+    position:absolute;
+    bottom: 0;
+}
+/*destination*/
+body{
+    background:hsl(27, 70%, 65%);
+   }
+h1{
+    font-size: 40px;
+    text-align: center;
+}
+ .image{
+     display: inline-block;
+     text-align: center;
+     width: 33%;
+     float: left;
+}
+figure{
+    overflow: hidden;
+    margin: 0 10px;
+}
+h3{
+    color: #000;
+    margin-top: 40px;
+    
+}
+p{
+    padding: 0 10px;
+    
+}
+.image img{
+   display: block;
+   width: 100%;
+   height: auto;
+   cursor: pointer;
+    
+}
+.image #Zoom-In img{
+    transform: scale(1);
+    transition: 0,4s ease-in-out;
+     
+ }
+ .image #Zoom-In:hover img{
+    transform: scale(1,2); 
+ }
+   
+  
+    
+
+
+
+
